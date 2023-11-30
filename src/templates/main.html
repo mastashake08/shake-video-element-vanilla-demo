@@ -1,0 +1,26 @@
+<template>
+    <div id="shake-video-container">
+        <video id="shake-video">
+
+        </video>
+        <slot title="shake-video-controls">
+            <button id="shake-play-btn" onclick="togglePlay">Play</button>
+        </slot>
+    </div>
+</template>
+<style>
+    #shake-play-btn {
+     border-color: blue;
+     border-width: 3px;   
+    }
+</style>
+<script>
+    function togglePlay() {
+        const video = document.getElementById('shake-video');
+        if(video.playing) {
+            video.pause();
+        } else {
+            video.play();
+        }
+    }
+</script>
