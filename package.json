@@ -24,7 +24,7 @@
     "preview": "nodemon server.js"
   },
   "dependencies": {
-    "@mastashake08/shake-video-element": "../mastashake08-shake-video-element-1.1.4.tgz",
+    "@mastashake08/shake-video-element": "^1.1.5",
     "core-js": "^3.33.3"
   },
   "devDependencies": {
